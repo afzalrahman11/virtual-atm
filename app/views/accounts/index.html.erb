@@ -1,0 +1,11 @@
+<h2>Index page</h2>
+
+<% @accounts.each do |account| %>
+  <ul>
+    <li><%= account.account_no %></li>
+    <li><%= account.account_type %></li>
+    <li>₹ <%= account.balance %></li>
+  </ul>
+<% end %>
+
+<%= link_to "Home", root_path %>
